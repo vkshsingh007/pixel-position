@@ -13,3 +13,12 @@ it('belongs to an employer', function () {
     //Act //Assert
     expect($job->employer->is($employer))->toBeTrue();
 });
+
+
+it('can have tags', function () {
+    //Arrenge
+    $job = Job::factory()->create();
+    $job->tag('Frontend');
+    //Act //Assert
+    expect($job->tags)->toHaveCount(1);
+});
