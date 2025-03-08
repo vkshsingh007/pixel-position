@@ -26,22 +26,21 @@
 
             </div>
             @auth
-                <div lass="space-x-6 font-bold flex">
+                <div class="space-x-6 font-bold flex">
                     <a href="/jobs/create">Post a Job</a>
-                
+
                     <form method="post" action="/logout">
                         @csrf
                         @method('delete')
                         <button>Log Out</button>
-                 
+
                     </form>
                 </div>
-              
+
             @endauth
 
             @guest
                 <div class="space-x-6 font-bold">
-l̥
                     <a href="/register">Sign Up</a>
                     <a href="/login">Login</a>
                 </div>

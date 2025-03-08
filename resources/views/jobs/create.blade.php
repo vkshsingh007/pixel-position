@@ -5,7 +5,7 @@
         <x-forms.input label="Salary" name="salary" placeholder="900000 INR" />
         <x-forms.input label="Location" name="location" placeholder="New Delhi (India)" />
         <x-forms.select label="Schedule" name="schedule">
-            <option>Part Time</option>
+            <option class="text-black">Part Time</option>
             <option>Full Time</option>
         </x-forms.select>
         <x-forms.input label="URL" name="url" placeholder="https://google.com" />
